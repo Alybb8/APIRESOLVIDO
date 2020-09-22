@@ -1,0 +1,12 @@
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\bin\Debug\netcoreapp3.1\BoletimMaroto.Context.deps.json
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\bin\Debug\netcoreapp3.1\BoletimMaroto.Context.runtimeconfig.json
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\bin\Debug\netcoreapp3.1\BoletimMaroto.Context.runtimeconfig.dev.json
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\bin\Debug\netcoreapp3.1\BoletimMaroto.Context.dll
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\bin\Debug\netcoreapp3.1\BoletimMaroto.Context.pdb
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.csprojAssemblyReference.cache
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.AssemblyInfoInputs.cache
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.AssemblyInfo.cs
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.csproj.CoreCompileInputs.cache
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.dll
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.pdb
+C:\Users\alyson.pegini\source\Repos\BoletimMaroto\BoletimMaroto.Context\obj\Debug\netcoreapp3.1\BoletimMaroto.Context.genruntimeconfig.cache
