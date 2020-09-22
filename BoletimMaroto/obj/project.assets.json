@@ -1495,6 +1495,19 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "BoletimMaroto.Context/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "3.1.8"
+        },
+        "compile": {
+          "bin/placeholder/BoletimMaroto.Context.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BoletimMaroto.Context.dll": {}
+        }
       }
     }
   },
@@ -5711,10 +5724,16 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "BoletimMaroto.Context/1.0.0": {
+      "type": "project",
+      "path": "../BoletimMaroto.Context/BoletimMaroto.Context.csproj",
+      "msbuildProject": "../BoletimMaroto.Context/BoletimMaroto.Context.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "BoletimMaroto.Context >= 1.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 3.1.8",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.8"
     ]
@@ -5725,11 +5744,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
-      "projectName": "BoletimMaroto.Context",
-      "projectPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
+      "projectUniqueName": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto\\BoletimMaroto.csproj",
+      "projectName": "BoletimMaroto",
+      "projectPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto\\BoletimMaroto.csproj",
       "packagesPath": "C:\\Users\\alyson.pegini\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\obj\\",
+      "outputPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\alyson.pegini\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5744,7 +5763,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj": {
+              "projectPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5778,6 +5801,9 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
+          "Microsoft.AspNetCore.App": {
+            "privateAssets": "none"
+          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }

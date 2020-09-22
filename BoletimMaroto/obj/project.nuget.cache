@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aDBvzoBhFJ40tEdKXQbq1ptkXjaeP6nOEx1hoeBU309xq47T2ft84qK/LoerKCuHX6ys5Wh6QJ7SWwFeiNt2TQ==",
+  "dgSpecHash": "nqoOVaZt19lwqm9V1aGESUivM3jD74uhAgkRHZE/dBeEBE1nArNFCsF7ATRdn2mJeV3VqQRF+Hwh4mj9JY3tjw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
+  "projectFilePath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto\\BoletimMaroto.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alyson.pegini\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\alyson.pegini\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
