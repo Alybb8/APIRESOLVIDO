@@ -162,20 +162,22 @@ namespace BoletimMaroto.Context.Util
         //      update
         //----------------
 
-        //public bool UpdateAluno(int idAluno, string novoAluno)
-        //{
-        //    boletimMaroto = new BoletimMarotoContext();
-        //    using (boletimMaroto)
-        //    {
-        //        var aluno = boletimMaroto.Aluno.FirstOrDefault(q => q.Id == idAluno);
-
-        //        if (aluno != null)
-        //        {
-        //            aluno.Nome = novoAluno;
-        //            boletimMaroto.Update(aluno);
-        //        }
-        //    }
-        //}
+        public bool UpdateAluno(int idAluno, string novoAluno)
+        {
+            boletimMaroto = new BoletimMarotoContext();//cria conexão com o banco
+            using (boletimMaroto)//fecha a conexão com o banco
+            {
+                var aluno = boletimMaroto.Aluno.FirstOrDefault(q => q.Id == idAluno);//selecionando o primeiro Id que é igual ao idAluno e retornando o objeto
+                if (aluno != null)//se não for nulo
+                {
+                    aluno.Nome = novoAluno;//substitui o dado do aluno
+                    boletimMaroto.Update(aluno);//insere o update
+                    return true;
+                }
+                else
+                    return false;
+            }
+        }
 
     }
 }

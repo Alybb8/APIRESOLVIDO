@@ -1,4 +1,5 @@
-﻿using BoletimModels;
+﻿using BoletimMaroto.Context.Util;
+using BoletimModels;
 using Microsoft.AspNetCore.Mvc;
 
 
@@ -9,11 +10,19 @@ namespace BoletimMaroto.Controllers
     public class AlunoController : ControllerBase
     {
         [HttpPost]
-        [Route("cadastroAlunos")]//inserir alunos
+        [Route("cadastro")]//inserir alunos
         public ActionResult AddAlunos(Aluno aluno)
         {
-            var result = new Result<Aluno>();
+            new Util<Aluno>().AddAlunos(aluno);
+            return Ok();
+        }
 
+        [HttpPut]
+        [Route("atualizar")]
+        public ActionResult Update(int id, string aluno)
+        {
+            new Util<Aluno>().UpdateAluno(id, aluno);
+            return Ok();
         }
 
     }

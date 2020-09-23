@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj": {}
+    "C:\\Users\\alyson.pegini\\Desktop\\BoletimMaroto\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj": {
+    "C:\\Users\\alyson.pegini\\Desktop\\BoletimMaroto\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
+        "projectUniqueName": "C:\\Users\\alyson.pegini\\Desktop\\BoletimMaroto\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
         "projectName": "BoletimMaroto.Context",
-        "projectPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
+        "projectPath": "C:\\Users\\alyson.pegini\\Desktop\\BoletimMaroto\\BoletimMaroto.Context\\BoletimMaroto.Context.csproj",
         "packagesPath": "C:\\Users\\alyson.pegini\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alyson.pegini\\Desktop\\APIRESOLVIDO\\BoletimMaroto.Context\\obj\\",
+        "outputPath": "C:\\Users\\alyson.pegini\\Desktop\\BoletimMaroto\\BoletimMaroto.Context\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\alyson.pegini\\AppData\\Roaming\\NuGet\\NuGet.Config",

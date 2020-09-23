@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace BoletimMaroto.Context.Migrations
 {
     [DbContext(typeof(BoletimMarotoContext))]
-    [Migration("20200922202810_InitialCode")]
+    [Migration("20200922214003_InitialCode")]
     partial class InitialCode
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

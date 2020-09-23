@@ -17,7 +17,7 @@ namespace BoletimMaroto.Context
         }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=NT-04809\\SQLEXPRESS; Initial Catalog=BoletimMaroto;Integrated Secutiry=True;");
+            optionsBuilder.UseSqlServer("Data Source=NT-04809\\SQLEXPRESS;Initial Catalog=BoletimMaroto;Integrated Security=True;MultipleActiveResultSets=True");
         }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
