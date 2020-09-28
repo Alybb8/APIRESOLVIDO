@@ -25,5 +25,20 @@ namespace BoletimMaroto.Controllers
             return Ok();
         }
 
+        [HttpGet]
+        [Route("listar")]
+        public ActionResult Get(string aluno)
+        {
+            new Util<Aluno>().GetAlunos(aluno);
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("delete")]
+        public ActionResult Del(int idAluno)
+        {
+            new Util<Aluno>().ExcludeAlunoById(idAluno);
+            return Ok();
+        }
     }
 }

@@ -75,12 +75,12 @@ namespace BoletimMaroto.Context.Util
             }
         }
 
-        public List<Aluno> GetAlunos(int alunos)
+        public List<Aluno> GetAlunos(string alunos)
         {
             boletimMaroto = new BoletimMarotoContext();
             using (boletimMaroto)
             {
-                return boletimMaroto.Aluno.Where(x => x.Id.Equals(alunos)).ToList();
+                return boletimMaroto.Aluno.Where(x => x.Nome.Equals(alunos)).ToList();
             }
         }
 
@@ -93,12 +93,12 @@ namespace BoletimMaroto.Context.Util
             }
         }
 
-        public List<Curso> GetAllCursos()
+        public List<Curso> GetAllCursos(string nomeCurso)
         {
             boletimMaroto = new BoletimMarotoContext();
             using (boletimMaroto)
             {
-                return boletimMaroto.Curso.ToList();
+                return boletimMaroto.Curso.Where(x=>x.Nome.Equals(nomeCurso)).ToList();
             }
         }
 
@@ -111,12 +111,12 @@ namespace BoletimMaroto.Context.Util
             }
         }
 
-        public List<Nota> GetInfosByName(string nome)//imprimindo Nota por nome, não sei se faz sentido Id?
+        public List<Nota> GetInfosByName(string nomeAluno)//imprimindo Nota por nome, não sei se faz sentido Id?
         {
             boletimMaroto = new BoletimMarotoContext();
             using (boletimMaroto)
             {
-                return boletimMaroto.Nota.Where(x => nome.Equals(nome)).ToList();
+                return boletimMaroto.Nota.Where(x => x.Alunos.Equals(nomeAluno)).ToList();
             }
         }
 
@@ -158,6 +158,40 @@ namespace BoletimMaroto.Context.Util
             }
         }
 
+        public string ExcludeMateriaByName(string descricao)
+        {
+            boletimMaroto = new BoletimMarotoContext();
+            using (boletimMaroto)
+            {
+                var excludeMateria = boletimMaroto.Materia.FirstOrDefault(x => x.Descricao == descricao);
+                if (excludeMateria != null)
+                {
+                    boletimMaroto.Materia.Remove(excludeMateria);
+                    boletimMaroto.SaveChanges();
+                    return ReturnMessages.Success;
+                }
+                else
+                    return ReturnMessages.NoSuccess;
+            }
+        }
+
+        public string ExcludeNota(int id)
+        {
+            boletimMaroto = new BoletimMarotoContext();
+            using (boletimMaroto)
+            {
+                var excludeNota = boletimMaroto.Nota.FirstOrDefault(x => x.Id == id);
+                if (excludeNota != null)
+                {
+                    boletimMaroto.Nota.Remove(excludeNota);
+                    boletimMaroto.SaveChanges();
+                    return ReturnMessages.Success;
+                }
+                else
+                    return ReturnMessages.NoSuccess;
+            }
+        }
+
         //----------------
         //      update
         //----------------
@@ -179,5 +213,55 @@ namespace BoletimMaroto.Context.Util
             }
         }
 
+        public bool UpdateCurso(int idCurso, string nomeCurso)
+        {
+            boletimMaroto = new BoletimMarotoContext();
+            using (boletimMaroto)
+            {
+                var curso = boletimMaroto.Curso.FirstOrDefault(q => q.Id == idCurso);
+                if (curso != null)
+                {
+                    curso.Nome = nomeCurso;
+                    boletimMaroto.Update(curso);
+                    return true;
+                }
+                else
+                    return false;
+            }
+        }
+
+        public bool UpdateMateria(int idCurso, string descricao)
+        {
+            boletimMaroto = new BoletimMarotoContext();
+            using (boletimMaroto)
+            {
+                var materia = boletimMaroto.Materia.FirstOrDefault(q => q.Id == idCurso);
+                if (materia != null)
+                {
+                    materia.Descricao = descricao;
+                    boletimMaroto.Update(materia);
+                    return true;
+                }
+                else
+                    return false;
+            }
+        }
+
+        public bool UpdateNota(int idNota, int notaAluno)
+        {
+            boletimMaroto = new BoletimMarotoContext();
+            using (boletimMaroto)
+            {
+                var nota = boletimMaroto.Nota.FirstOrDefault(q => q.Id == idNota);
+                if (nota != null)
+                {
+                    nota.NotaDoAluno = notaAluno;
+                    boletimMaroto.SaveChanges();
+                    return true;
+                }
+                else
+                    return false;
+            }
+        }
     }
 }
